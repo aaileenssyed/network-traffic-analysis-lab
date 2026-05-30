@@ -68,10 +68,6 @@ Screenshot:
 
 I identified TLS Client Hello, Server Hello, and encrypted application data.
 
-Screenshot:
-
-`/screenshots/07-tls-traffic.png`
-
 ## Intentional Break/Fix Scenario
 
 To simulate a DNS issue, I manually changed the DNS server to an invalid address. After this change, domain name resolution failed.
@@ -79,12 +75,6 @@ To simulate a DNS issue, I manually changed the DNS server to an invalid address
 I confirmed that the issue was DNS-related by testing direct IP connectivity and comparing it with domain-based connectivity.
 
 After restoring DNS settings to automatic, name resolution worked again.
-
-Screenshots:
-
-`/screenshots/08-broken-dns.png`  
-`/screenshots/09-dns-failure.png`  
-`/screenshots/10-dns-fixed.png`
 
 ## Key Findings
 
@@ -114,4 +104,3 @@ Understanding DNS, TCP, and HTTPS traffic is important for network troubleshooti
 ## What I Learned
 
 This lab helped me understand the full web connection process from a networking perspective. I practiced using command-line tools and Wireshark to observe DNS queries, TCP handshakes, and encrypted HTTPS communication.
-
